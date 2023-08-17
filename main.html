@@ -1,41 +1,55 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+<style>
+body {
+background-color: rgb(204, 204, 204);
+}
+h1, h2 {
+text-align: center;
+}
+ul {
+list-style-type: none;
+}
+ul li a {
+text-decoration-line: none;
+}
+.player_one, .player_two {
+background-color: rgb(255, 255, 255);
+padding: 10px;
+border-radius: 5px;
+}
+</style>
 </head>
-
 <body>
+<h1>My Playlist</h1>
+<h2>Now Playing...</h2>
+<h2>MP3 songs</h2>
+<ul>
+<li><a href="#" target="_blank">Song 1</a></li>
+<li><a href="#" target="_blank">Song 2</a></li>
+<li><a href="#" target="_blank">Song 3</a>
 
-    <h1>My Playlist</h1>
-
-    <ul>
-        <li>Song 1</li>
-        <li>Song 2</li>
-        <li>Song 3</li>
-        <li>Song 4</li>
-        <li>Song 5</li>
-    </ul>
-
-    <h2>Now Playing...</h2>
-
-    <div>
-
-        <iframe width="560" height="315" class="player_one" src="https://www.youtube.com/embed/XzOGvA5Iiug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen controls></iframe>
-
-		<h2>MP3 songs</h2>
-        <audio controls class="player_two">
-            <source src="horse.ogg" type="audio/ogg">
-            
-          </audio>
-
-
+    <div class="player_one">
+        <video controls>
+            <source src="movie.mp4" type="video/mp4">
+            <source src="movie.ogg" type="video/ogg">
+          
+        </video>
     </div>
-	
+
+    <div class="player_two">
+        <audio controls>
+            <source src="audio.mp3" type="audio/mpeg">
+            <source src="audio.ogg" type="audio/ogg">
+            
+        </audio>
+    </div>
+
+
     <script type="text/javascript" src="./script.js">
-</script>
-
-</body>
-
-</html>
+    </script>
+    
+    </body>
+    
+    </html>
