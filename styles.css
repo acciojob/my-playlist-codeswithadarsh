@@ -14,10 +14,11 @@
     .player_one{
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
-        padding: 100px;
+        padding: 50px;
     }
     .player_two{
         background-color: rgb(255, 255, 255);
         border-radius: 5px;
-        padding: 230px;
+        padding: 180px;
+		
     }
